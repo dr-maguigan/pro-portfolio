@@ -23,65 +23,78 @@
   margin:auto;
   text-align: center;
 }
-a:link {
-  color: cyan;
-  background-color: transparent;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
-a:visited {
-  color: cyan;
-  background-color: transparent;
-  text-decoration: none;
+
+.sidenav a:hover {
+  color: #f1f1f1;
 }
-a:hover {
-  color: cyan;
-  background-color: transparent;
-  text-decoration: underline;
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
-a:active {
-  color: cyan;
-  background-color: transparent;
-  text-decoration: underline;
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 </style>
 </head>
 <body>
-</head>
-<body>
-
-<div class="jumbotron text-center">
-  <h1>Michael Maguigan</h1>
-  <p>Geoscientist - GIScientist - Cartographer</p> 
-</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://dr-maguigan.github.io/pro-portfolio/index.html#">Home</a>
   
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
-      <h3><a href="https://dr-maguigan.github.io/pro-portfolio/portfolio.html">Portfolio
-</a>
-      </h3>
-      <p> 
-       
-      </p>
-    </div>
-    <div class="col-sm">
-      <h3><a href="https://dr-maguigan.github.io/pro-portfolio/background.html">Background
-</a>
-      </h3>
-      <p> 
-       
-      </p>
-    </div>
-    <div class="col-sm">
-      <h3><a href="https://dr-maguigan.github.io/pro-portfolio/social-media.html">Social Media
-</a>
-      </h3>        
-      <p> 
-       
-      </p>
-    </div>
-  </div>
+  <h2>Portolio Samples</h2>
+  <a href="https://dr-maguigan.github.io/pro-portfolio/portfolio.html#">Red River Watershed</a>
+  <a href="https://dr-maguigan.github.io/pro-portfolio/LA-Covid-Cases.html#">Louisiana Covid Cases</a>
+  <a href="https://dr-maguigan.github.io/pro-portfolio/housing-crisis.html#">Housing Crisis Infographic</a>
+  <a href="https://dr-maguigan.github.io/pro-portfolio/proposed-cycling-tour">Proposed Cycling Tour</a>
+  
+  <h2>Background</h2>
+  <a href="https://dr-maguigan.github.io/pro-portfolio/background.html#">Bio</a>
+  <a href="https://dr-maguigan.github.io/pro-portfolio/resume.html#">Resume</a>
+  <a href="https://dr-maguigan.github.io/pro-portfolio/research-experience.html#">Research Experience</a>
+  
+  <h2>Social Media</h2>
+  <a href="https://dr-maguigan.github.io/pro-portfolio/socialmedia.html#">Social Media</a>
+  
 </div>
 
+
+<span style="font-size:20px;cursor:pointer;color=white" onclick="openNav()">&#9776; Navigation</span>
+  
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </body>
 </html>
