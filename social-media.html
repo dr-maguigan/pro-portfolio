@@ -72,14 +72,24 @@
   .sidenav a {font-size: 18px;}
 }
 
-.box {
-  height: auto;
-  width: 75%;
-  padding: 1%;
-  margin-left: auto;
-  margin-right: auto;
+
+* {
+  box-sizing: border-box;
+  }
+
+.column {
+  float: left;
+  width: 75px;
+  padding: 22.5%;
+  margin: 0.5%;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    
 </style>
 </head>
 <body>
@@ -118,12 +128,15 @@ function closeNav() {
 <h1>Social Media</h1>
 <h2>Follow Dr. Maguigan on their professional accounts!</h2>
 
-<div id="mybox" class="box">
-<a href="https://twitter.com/coachmrdrm">
-  <img src="twitter logo.png" alt="Twitter" width="75" height="125"></a>
-  <a href="https://www.linkedin.com/in/mike-maguigan/"> <img src="linkedin logo.png" alt="LinkedIn" width="75" height="125">
+<div class="row">
+  <div class="column">
+   <a href="https://twitter.com/coachmrdrm">
+  <img src="twitter logo.png" alt="Twitter" width="75" height="125">
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://www.linkedin.com/in/mike-maguigan/"> <img src="linkedin logo.png" alt="LinkedIn" width="75" height="125">
 </a>
-
- </div>
+  </div>
 </body>
 </html>
