@@ -79,9 +79,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-ul.a {
-  list-style-type: circle;
-}
 
 </style>
 </head>
@@ -120,8 +117,16 @@ function closeNav() {
 </script>
 <h1>Social Media</h1>
 <div id="mybox" class="box">
-Dr. Maguigan has professional accounts on <a href="https://twitter.com/coachmrdrm">Twitter</a> and <a href ="https://www.linkedin.com/in/mike-maguigan/">Linkedin</a>.
-  
+Follow Dr. Maguigan on their professional accounts!
+
+<a href="https://twitter.com/coachmrdrm">
+  <img src="twitter logo.png" alt="Twitter" width="75" height="125">
+</a>
+
+<a href="https://www.linkedin.com/in/mike-maguigan/">
+  <img src="linkedin logo.png" alt="LinkedIn" width="75" height="125">
+</a>
+
  </div>
 </body>
 </html>
