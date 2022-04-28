@@ -17,18 +17,7 @@
   background-attachment: fixed;  
   background-size: cover;
 }
-    * {
-      font-family: Georgia;
-      color: white;
-      }
-     img {
-  display: block;
-  max-width: 35%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-      .container {
+ .container {
   margin:auto;
   text-align: center;
 }
@@ -77,8 +66,8 @@ body {font-family: Georgia, sans-serif;}
 img {vertical-align: middle;}
 
 .slideshow-container {
-  max-width: 65%;
-  position: relative;
+  max-width: 75%;
+  position: center;
   margin: auto;
 }
 
@@ -125,10 +114,6 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
 </style>
 </head>
 <body>
@@ -204,7 +189,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 </script>
 </body>
