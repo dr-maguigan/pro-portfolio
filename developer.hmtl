@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mica Maguigan</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+	h1 {text-align: center;}
+	h2 {text-align: center;}
+	h3 {text-align: center;}
+    	p {text-align: center;}
+    	body {
+  	background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1a/Small_DEM_Background.png?20220425182601');
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;  
+  	background-size: cover;
+	}
+    	* {
+      	font-family: Georgia;
+      	color: #45a29e;
+     	}
+	.center {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	}
+      	.container {
+  	margin:auto;
+  	text-align: center;
+	}
+	.box {
+  	float: left;
+  	width: 50%;
+  	padding: 10px;
+	}
+	.sidenav {
+  	height: 100%;
+  	width: 0;
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	background-color: #111;
+  	overflow-x: hidden;
+  	transition: 0.5s;
+  	padding-top: 60px;
+	}
+	.sidenav h2 {
+	text-align: left;
+	}
+	.sidenav a {
+  	padding: 8px 8px 8px 32px;
+  	text-decoration: none;
+  	font-size: 20px;
+  	color: #818181;
+  	display: block;
+  	transition: 0.3s;
+	}
+	.sidenav a:hover {
+  	color: #f1f1f1;
+	}
+	.sidenav .closebtn {
+  	position: absolute;
+  	top: 0;
+  	right: 25px;
+  	font-size: 36px;
+  	margin-left: 50px;
+	}
+
+	@media screen and (max-height: 450px) {
+  	.sidenav {padding-top: 15px;}
+  	.sidenav a {font-size: 18px;}
+	}
+</style>
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<h2>Homepage</h2>
+  			<a href="https://dr-maguigan.github.io/pro-portfolio/index.html#">Home</a>
+  
+  		<h2>Front End/Web Developer</h2>
+			<h2>Portolio Samples</h2>
+  			<a href="https://dr-maguigan.github.io/pro-portfolio/developer.html">Web/Front End Developer</a>
+  			<a href="https://dr-maguigan.github.io/pro-portfolio/cartographer.html">Cartographer</a>
+  			<a href="https://dr-maguigan.github.io/pro-portfolio/researcher.html">Researcher</a>
+  			<a href="https://dr-maguigan.github.io/pro-portfolio/educator.html">Educator</a>
+                
+  		<h2>Background</h2>
+  			<a href="https://dr-maguigan.github.io/pro-portfolio/background.html#">Bio/Resume</a>
+  
+  		<h2>Social Media</h2>
+  			<a href="https://www.linkedin.com/in/mica-maguigan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+   
+	</div>
+
+
+	<span style="font-size:20px;cursor:pointer;color=white" onclick="openNav()">&#9776; Navigation</span>
+  
+	<script>
+		function openNav() {
+  			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+  			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	<h1>Mica Maguigan</h1>
+	<h2>Front End/Web Developer Portfolio</h2>
+	<div class="box">
+		<a href="https://dr-maguigan.github.io/Red-River-Watershed/">HTML, Javascript, and APIs (Leaflet, JQuery, chart.JS)</a>
+  	</div>
+	<div class="box">
+    		<a href="https://dr-maguigan.github.io/sunbelt-migration/">HMTL, Javascript, and APIs (Leaflet, JQuery)</a>
+  	</div>
+	<div class="box">
+    		<a href="https://dr-maguigan.github.io/Northwest-LA-water/">HMTL, JavaScript, and APIs (Leaflet, JQuery)</a>
+  	</div>
+  	<div class="box">
+    		<a href="https://dr-maguigan.github.io/lsus-campus-map/">HTML and Javascipt with API (Leaflet)</a>
+  	</div>
+	<div class="box">
+    		<a href="https://dr-maguigan.github.io/geol-105-problem-1-time/">HTML and Javascipt</a>
+  	</div>
+	
+</body>
+</html>
